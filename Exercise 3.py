@@ -8,7 +8,7 @@ def main():
             raise ValueError("Username cannot be empty.")
 
         age_input = input("Enter age: ")
-        age = int(age_input)  # This may raise ValueError
+        age = int(age_input)
 
         if age <= 0:
             raise ValueError("Age must be a positive number.")
