@@ -13,7 +13,7 @@ def main():
         if age <= 0:
             raise ValueError("Age must be a positive number.")
 
-        with open("users.txt", "w") as file:
+        with open("users.txt", "a") as file:
             file.write(f"{username} - {age}\n")
 
         print("\nUser saved successfully.\n")
